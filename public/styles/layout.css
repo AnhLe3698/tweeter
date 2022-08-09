@@ -44,13 +44,11 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  font-family: 'SourceSansPro-Light', 'sans-serif';*/
+  font-family: 'SourceSansPro-Light', 'sans-serif';
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- #Title {
-  font-family: 'Bungee-Regular';
-}
+ 
