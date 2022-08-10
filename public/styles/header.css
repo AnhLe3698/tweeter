@@ -1,0 +1,15 @@
+.prof {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: orange;
+  height: 400px;
+  top: 110px;
+  background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
+}
+
+.image1 {
+  margin-bottom: -45px;
+}

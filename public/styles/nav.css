@@ -1,8 +1,14 @@
 nav {
   display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+
   font-family: 'Bungee-Regular';
   background-color: #4056A1;
   color: #FFFFFF;
+
   flex-direction: row;
   height: 120px;
   align-items: center;
@@ -36,11 +42,5 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.prof {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
+  
 }
