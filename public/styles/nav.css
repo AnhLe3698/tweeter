@@ -1,10 +1,10 @@
 nav {
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
-
+  z-index: 4; /* This will allow it to appear in forground */
   font-family: 'Bungee-Regular';
   background-color: #4056A1;
   color: #FFFFFF;
