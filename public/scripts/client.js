@@ -22,25 +22,34 @@ const data = [
     },
     "created_at": 1461113959088
   }
-]
+];
 
 const renderTweets = function(tweets) {
 // loops through tweets
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
-}
+  for (const tweet of tweets) {
+    console.log(createTweetElement(tweet));
+    let $tweet = createTweetElement(tweet);
+    $('#tweets-container').append($tweet);
+  }
+  let $gap = '<div class="gap"></div>';
+  $(`#tweets-container`).append($gap);
+};
 
 const createTweetElement = function(tweet) {
+
+
   let $tweet = `
-    <article class="all-tweets">
-    <h1 class="tweet-title"><span>Newton</span><span id="handle">@SirIsaac</span></h1>
+  <article class="all-tweets">
+    <h1 class="tweet-title"><span><img src=${tweet.user.avatars} alt="profile"> ${tweet.user.name}
+    </span><span id="handle">${tweet.user.handle}</span></h1>
     <p class="tweet-body">
-      If I have seen further it is by standing on 
-      the shoulders of giants
+      ${tweet.content.text}
     </p>
     <span id="blackLine"></span>
     <footer class="tweet-footer">
-      <span>10 days ago</span> 
+      <span>${tweet["created_at"]}</span> 
       <span>
         <object class="icons" data="./images/flag-solid.svg" width="16" height="16"> </object>
         <object class="icons" data="./images/retweet-solid.svg" width="16" height="16"> </object> 
@@ -51,6 +60,6 @@ const createTweetElement = function(tweet) {
   `;
 
   return $tweet;
-}
+};
 
 renderTweets(data);
