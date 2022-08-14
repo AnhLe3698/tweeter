@@ -1,8 +1,8 @@
 $(document).ready(function() {
   // --- our code goes here ---
 
-  //Keyup is the better choice since it can also check for alternate key presses
-  // like delete unlike keypress. Keydown misses the first character
+  // Keyup is the better choice since it can also check for alternate key presses
+  // such as 'delete' key unlike keypress. Keydown misses the first character.
   $("#tweet-text").keyup(function() {
     let lengthTweet = String($(this).val()).length;
     console.log(lengthTweet);

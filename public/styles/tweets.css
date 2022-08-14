@@ -1,0 +1,76 @@
+.all-tweets {
+  box-sizing: content-box;
+  display: flex;
+  align-items:flex-start;
+  flex-direction:column;
+  position: relative;
+  border: 2px solid black;
+  width: 90%;
+  height: 150px;
+  top: 40px;
+}
+
+.all-tweets:hover {
+  box-shadow: 10px 5px 5px grey;
+}
+
+.tweet-title {
+  display: flex;
+  align-self: center;
+  font-size: 20px;
+  justify-content: space-between;
+  width: 90%;
+  top: -30px;
+}
+
+.tweet-title #handle {
+  opacity: 50%;
+}
+
+.tweet-body{
+  display: flex;
+  align-self: center;
+  font-size: 16px;
+  width: 85%;
+  border-color: black;
+}
+
+.tweet-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-self: center;
+  width: 90%;
+  font-size: 15px;
+  padding-top: 8px;
+  height: 30px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.icons svg{
+  position: relative;
+  height: 16px;
+  width: 20px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.icons:hover {
+  cursor: pointer;
+  filter: invert(83%) sepia(43%) saturate(2244%) hue-rotate(359deg) brightness(103%) contrast(104%);
+}
+
+#blackLine {
+  display: block;
+  width: 90%;
+  border-bottom: 2px solid rgb(20, 20, 20);
+  align-self: center;
+}
+
+article + article {
+  margin-top: 30px;
+}
+
+.gap {
+  height: 100px;
+}

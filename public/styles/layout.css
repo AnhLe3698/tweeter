@@ -44,7 +44,6 @@ body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
-  background-color: orange;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
   font-family: 'SourceSansPro-Light', 'sans-serif';
 }
@@ -57,11 +56,10 @@ body {
   margin-top: 0px;
   position: relative;
   display: flex;
-  margin-left: 5%;
-  margin-right: 5%;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
+  border-spacing: 15px;
  }
  
