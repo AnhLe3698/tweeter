@@ -48,9 +48,11 @@
 
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        <form method="POST" action="/tweets/">
+        <form id="newText" method="POST" action="/tweets/">
           <div><label id="titleHum" for="tweet-text">What are you humming about?</label></div>
-          <div><textarea name="text" id="tweet-text"></textarea></div>
+          <!--We need a name assigned on the elements we want a return value for when we serialize,
+          serialize must be assigned for a FORM and names must be assigned!-->
+          <div ><textarea name="text" id="tweet-text"></textarea></div>
           <div class="bottomBar">
             <button type="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
@@ -81,6 +83,6 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
-    
+
   </body>
 </html>

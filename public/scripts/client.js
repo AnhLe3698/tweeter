@@ -38,7 +38,6 @@ const renderTweets = function(tweets) {
 
 const createTweetElement = function(tweet) {
 
-
   let $tweet = `
   <article class="all-tweets">
     <h1 class="tweet-title"><span><img src=${tweet.user.avatars} alt="profile"> ${tweet.user.name}
@@ -62,3 +61,25 @@ const createTweetElement = function(tweet) {
 };
 
 renderTweets(data);
+
+$("#newText").submit(function(event) {
+  let data = $("#newText").serialize();
+  
+  event.preventDefault();
+
+  alert("Handler for .submit() called.");
+  alert(`${data}`);
+  console.log(event);
+  // $.ajax('more-posts.html', { method: 'POST' })
+  //   .then(function (morePostsHtml) {
+  //     console.log('Success: ', morePostsHtml);
+  //   });
+  // let data = ($("#tweet-text").first().val()).serialize();
+  // alert("Handler for .submit() called.");
+  // event.preventDefault();
+  $.post('/', data)
+    .then(function() {
+      console.log('Success: ');
+    });
+  //http://localhost:8080/
+});

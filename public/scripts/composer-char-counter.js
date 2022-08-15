@@ -5,7 +5,6 @@ $(document).ready(function() {
   // such as 'delete' key unlike keypress. Keydown misses the first character.
   $("#tweet-text").keyup(function() {
     let lengthTweet = String($(this).val()).length;
-    console.log(lengthTweet);
     let counter = $(this).parent().parent().children('.bottomBar').children('.counter');
     counter.text(140 - lengthTweet);
     if (Number(counter.text()) < 0) {
