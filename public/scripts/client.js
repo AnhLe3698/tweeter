@@ -37,6 +37,8 @@ const renderTweets = function(tweets) {
 };
 
 const createTweetElement = function(tweet) {
+  
+  let time = timeago.format(tweet.created_at);
 
   let $tweet = `
   <article class="all-tweets">
@@ -47,7 +49,7 @@ const createTweetElement = function(tweet) {
     </p>
     <span id="blackLine"></span>
     <footer class="tweet-footer">
-      <span>${tweet["created_at"]}</span> 
+      <span>${time}</span> 
       <span>
         <object class="icons" data="./images/flag-solid.svg" width="16" height="16"> </object>
         <object class="icons" data="./images/retweet-solid.svg" width="16" height="16"> </object> 
