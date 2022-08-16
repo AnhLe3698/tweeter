@@ -52,7 +52,7 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main {
+ #mainContainer {
   margin-top: 0px;
   position: relative;
   display: flex;

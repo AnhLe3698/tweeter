@@ -101,3 +101,13 @@ $("#newText").submit(function(event) {
       });
   }
 });
+
+
+$(".smFont").on('click', () => {
+  if ($(".new-tweet").is(":hidden")) {
+    $(".new-tweet").slideDown("slow");
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  } else {
+    $(".new-tweet").slideUp("slow");
+  }
+});

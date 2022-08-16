@@ -8,7 +8,6 @@ nav {
   font-family: 'Bungee-Regular';
   background-color: #4056A1;
   color: #FFFFFF;
-
   flex-direction: row;
   height: 120px;
   align-items: center;
@@ -20,7 +19,7 @@ nav {
 #arrow {
   color: red;
   margin-bottom: -90px;
-  
+  cursor: pointer;
 }
 
 @keyframes name-of-animation {
@@ -48,6 +47,7 @@ nav {
 
 .smFont {
   margin-right: 1.5em;
+  cursor: pointer;
 }
 
 .Title2 {
@@ -57,5 +57,4 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }

@@ -110,3 +110,34 @@ article + article {
   height: 23px;
   width: 23px;
 }
+
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+  }
+  main {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    margin-top: 5%;
+  }
+  .prof {
+    /* position: fixed; */
+    width: 45vh;
+    height: 38vh;
+    margin-right: 15vh;
+    margin-left: 8vh;
+  }
+  .new-tweet {
+    width: 65vh;
+    right: 5vh;
+    margin-right: 5vh;
+  }
+  #tweets-container {
+    width: 70vh;
+    margin-right: 5vh;
+  }
+}
