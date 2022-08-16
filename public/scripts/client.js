@@ -54,11 +54,11 @@ const createTweetElement = function(tweet) {
     ${safeHTML}
     <span id="blackLine"></span>
     <footer class="tweet-footer">
-      <span>${time}</span> 
+      <span>${time}</span>
       <span>
-        <object class="icons" data="./images/flag-solid.svg" width="16" height="16"> </object>
-        <object class="icons" data="./images/retweet-solid.svg" width="16" height="16"> </object> 
-        <object class="icons" data="./images/heart-solid.svg" width="16" height="16"></object>
+        <i id="icons" class="fa-solid fa-flag"></i>
+        <i id="icons" class="fa-solid fa-retweet"></i>
+        <i id="icons" class="fa-solid fa-heart"></i>
       </span>
     </footer>
   </article>

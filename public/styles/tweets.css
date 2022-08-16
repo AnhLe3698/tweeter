@@ -64,22 +64,30 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.icons object{
-  display: block;
+#iconBox {
+  display: flex;
+  flex-direction: row;
+  pointer-events: none;
+  justify-content: flex-end;
+}
+
+#icons {
   position: relative;
-  height: 16px;
+  height: 30px;
   width: 20px;
-  pointer-events: none;
-  z-index: -1;
+  z-index: +1;
 }
 
-svg {
-  pointer-events: none;
-}
 
-.icons:hover {
+
+/* svg {
+  pointer-events: none;
+} */
+
+#icons:hover {
   cursor: pointer;
-  filter: invert(83%) sepia(43%) saturate(2244%) hue-rotate(359deg) brightness(103%) contrast(104%);
+  color: gold;
+  /* filter: invert(83%) sepia(43%) saturate(2244%) hue-rotate(359deg) brightness(103%) contrast(104%); */
 }
 
 #blackLine {

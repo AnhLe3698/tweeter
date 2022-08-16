@@ -20,6 +20,21 @@ nav {
 #arrow {
   color: red;
   margin-bottom: -90px;
+  
+}
+
+@keyframes name-of-animation {
+  from {
+    transform: translateY(0%);
+  }
+
+  to {
+    transform: translateY(4px);
+  }
+}
+
+#arrow {
+  animation: name-of-animation 1.5s infinite;
 }
 
 #Title {
