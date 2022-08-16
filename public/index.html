@@ -45,10 +45,11 @@
       </div>
     </header>
 
-    <main id="tweets-container">
-
+    <main >
+      
+      <h1 id="errorMessage">⚠️--Alert! You have surpassed the character limit!--⚠️</h1>
+      <h1 id="errorMessage2">⚠️---------Alert! Missing Tweet Information----------⚠️</h1>
       <section class="new-tweet">
-        <h2>Compose Tweet</h2>
         <form id="newText" method="POST" action="/tweets/">
           <div><label id="titleHum" for="tweet-text">What are you humming about?</label></div>
           <!--We need a name assigned on the elements we want a return value for when we serialize,
@@ -61,7 +62,8 @@
         </form>
       </section>
 
-      <article class="all-tweets">
+      <div id="tweets-container">
+        <article class="all-tweets">
           <h1 class="tweet-title"><span><img src="https://i.imgur.com/73hZDYK.png" alt="profile"> Newton
           </span><span id="handle">@SirIsaac</span></h1>
           <p class="tweet-body">
@@ -77,7 +79,9 @@
               <object class="icons" data="./images/heart-solid.svg" width="16" height="16"></object>
             </span>
           </footer>
-      </article>
+        </article>
+      </div>
+      
 
     </main>
   

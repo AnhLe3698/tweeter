@@ -28,25 +28,30 @@ const renderTweets = function(tweets) {
 // loops through tweets
 // calls createTweetElement for each tweet
 // takes return value and appends it to the tweets container
+  $('#tweets-container').empty();
   for (const tweet of tweets) {
     let $tweet = createTweetElement(tweet);
-    $('#tweets-container').append($tweet);
+    $('#tweets-container').prepend($tweet);
   }
   let $gap = '<div class="gap"></div>';
   $(`#tweets-container`).append($gap);
 };
 
-const createTweetElement = function(tweet) {
-  
-  let time = timeago.format(tweet.created_at);
+// Safety Function which will wrap user input around safe characters
+const escape = function (str) {
+  let div = document.createElement("span");
+  div.appendChild(document.createTextNode(str));
+  return div.innerHTML;
+};
 
+const createTweetElement = function(tweet) {
+  let time = timeago.format(tweet.created_at);
+  const safeHTML = `<p class="tweet-body">${escape(tweet.content.text)}</p>`;
   let $tweet = `
   <article class="all-tweets">
     <h1 class="tweet-title"><span><img src=${tweet.user.avatars} alt="profile"> ${tweet.user.name}
     </span><span id="handle">${tweet.user.handle}</span></h1>
-    <p class="tweet-body">
-      ${tweet.content.text}
-    </p>
+    ${safeHTML}
     <span id="blackLine"></span>
     <footer class="tweet-footer">
       <span>${time}</span> 
@@ -72,15 +77,27 @@ const loadTweets = function() {
 loadTweets();
 
 $("#newText").submit(function(event) {
-  let data = $("#newText").serialize();
-  
-  event.preventDefault();
-  alert(`${data}`);
 
-  $.post('/tweets/', data)
-    .then(function() {
-      $.getJSON('/tweets/', function(data) {
-        renderTweets(data);
+  let data = $("#newText").serialize();
+  event.preventDefault();
+
+  if (data === 'null' || data === 'text=') {
+    // Returns this message if there is no input
+    $("#errorMessage").slideUp("slow");
+    $("#errorMessage2").slideDown("slow");
+  } else if($("#tweet-text").val().length > 140) {
+    // Grabs the plain text and checks length
+    $("#errorMessage2").slideUp("slow");
+    $("#errorMessage").slideDown("slow");
+    // alert(`Your Message is too LONG!`);
+  } else {
+    $("#errorMessage").slideUp("slow");
+    $("#errorMessage2").slideUp("slow");
+    $.post('/tweets/', data)
+      .then(function() {
+        $.getJSON('/tweets/', function(data) {
+          renderTweets(data);
+        });
       });
-    });
+  }
 });

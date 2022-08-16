@@ -1,7 +1,11 @@
-.all-tweets {
+#tweets-container {
   box-sizing: content-box;
+  width: 100%;
+}
+
+.all-tweets {
+  /* box-sizing: content-box; */
   display: flex;
-  align-items:flex-start;
   flex-direction:column;
   position: relative;
   border: 2px solid black;
@@ -9,6 +13,8 @@
   width: 90%;
   height: 150px;
   top: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .all-tweets:hover {
@@ -24,7 +30,6 @@
   top: 50px;
   align-items: center;
   align-content: center;
-  align-items: center;
   margin-top: 14px;
   margin-bottom: 6px;
 }
@@ -36,10 +41,15 @@
 .tweet-body{
   display: flex;
   align-self: center;
-  font-size: 16px;
+  font-size: 15px;
   width: 85%;
+  height: 40px;
   border-color: black;
-  padding: 2px;
+  padding: 0px;
+  margin-bottom: 0px;
+  white-space: pre-line; /*Allows for words to continue on next line*/
+  max-width: 85%;
+  font-family: 'SourceSansPro-SemiBold';
 }
 
 .tweet-footer {

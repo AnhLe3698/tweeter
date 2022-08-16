@@ -35,3 +35,23 @@
 .bottomBar button:hover {
   cursor: pointer;
 }
+
+#errorMessage {
+  display: none;
+  font-size: 80%;
+  width: 90%;
+  height: 30px;
+  color: red;
+  border: 2px solid red;
+  text-align: center;
+}
+
+#errorMessage2 {
+  display: none;
+  font-size: 80%;
+  width: 90%;
+  height: 30px;
+  color: red;
+  border: 2px solid red;
+  text-align: center;
+}
