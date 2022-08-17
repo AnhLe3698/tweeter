@@ -158,7 +158,6 @@ article + article {
     margin-top: 5%;
   }
   .prof {
-    /* position: fixed; */
     position: sticky;
     top: 150px;
     width: 45vh;

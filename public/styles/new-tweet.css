@@ -42,6 +42,7 @@
   cursor: pointer;
 }
 
+/* Error: No input in the tweet form */
 #errorMessage {
   display: none;
   font-size: 80%;
@@ -52,6 +53,7 @@
   text-align: center;
 }
 
+/* Error: Too many characters  in tweet form */
 #errorMessage2 {
   display: none;
   font-size: 80%;
