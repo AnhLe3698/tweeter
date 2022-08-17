@@ -1,11 +1,12 @@
 /* Styling the profile picture and name */
+@import 'variables';
 
 .prof {
-  display: flex;
-  position: relative;
-  align-items: center;
+  
+  // Added mixins to control positioning
+  @include spacing($position: relative);
+  
   flex-direction: column;
-  justify-content: center;
   background-color: orange;
   height: 400px;
   top: 0px;

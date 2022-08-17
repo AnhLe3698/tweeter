@@ -110,11 +110,11 @@ article + article {
 #scrollUp {
   position: fixed;
   display: flex;
+  align-items: center;
   justify-content: center;
   align-content: center;
-  flex-direction: column;
   align-self: center;
-  align-items: center;
+  flex-direction: column;
   width: 60px;
   color: white;
   height: 60px;

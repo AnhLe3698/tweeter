@@ -1,10 +1,10 @@
 /* Styling the profile picture and name */
 .prof {
-  display: flex;
   position: relative;
+  display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   background-color: orange;
   height: 400px;
   top: 0px;

@@ -111,13 +111,12 @@ article + article {
 
 /* --------------Stretch---------- */
 #scrollUp {
-  position: fixed;
-  display: flex;
-  justify-content: center;
+  // Added mixins to control positioning
+  @include spacing;
+
   align-content: center;
-  flex-direction: column;
   align-self: center;
-  align-items: center;
+  flex-direction: column;
   width: 60px;
   color: white;
   height: 60px;
