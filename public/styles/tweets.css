@@ -162,9 +162,10 @@ article + article {
   }
   .new-tweet {
     width: 40rem;
-    right: 5rem;
+    margin-right: 2rem;
   }
   #tweets-container {
     width: 45rem;
+    margin-right: 2rem;
   }
 }

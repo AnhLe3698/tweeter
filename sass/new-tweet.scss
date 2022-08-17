@@ -2,9 +2,10 @@
 --------New Tweet Form--------
 ------------------------------ */
 
+@import 'variables';
 .new-tweet {
   margin-top: 15px;
-  width: 90%;
+  width: $width;
   display: none;
 }
 
@@ -27,7 +28,7 @@
   height: 40px;
   padding-top: 5px;
   font-size: 14px;
-  width: 100%;
+  width: $fullWidth;
   background: transparent;
   font-family: 'SourceSansPro-SemiBold', 'sans-serif';
 }
@@ -46,8 +47,8 @@
 #errorMessage {
   display: none;
   font-size: 80%;
-  width: 90%;
-  height: 30px;
+  width: $width;
+  height: $height;
   color: red;
   border: 2px solid red;
   text-align: center;
@@ -57,8 +58,8 @@
 #errorMessage2 {
   display: none;
   font-size: 80%;
-  width: 90%;
-  height: 30px;
+  width: $width;
+  height: $height;
   color: red;
   border: 2px solid red;
   text-align: center;

@@ -19,6 +19,29 @@ nav {
   justify-content: space-between;
   font-size: 35px;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+
+  #Title {
+    margin-left: 1.5em;
+    margin-top: 35px;
+  }
+
+  .smFont {
+    margin-right: 1.5em;
+    cursor: pointer;
+    .Title2 {
+      font-size: 22px;
+      font-family: SourceSansPro-Light;
+      margin-top: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .bold {
+        font-family: SourceSansPro-SemiBold;
+      }
+    }
+  }
+
 }
 
 #arrow {
@@ -41,25 +64,3 @@ nav {
   animation: name-of-animation 1s infinite;
 }
 
-#Title {
-  margin-left: 1.5em;
-  margin-top: 35px;
-}
-
-.bold {
-  font-family: SourceSansPro-SemiBold;
-}
-
-.smFont {
-  margin-right: 1.5em;
-  cursor: pointer;
-}
-
-.Title2 {
-  font-size: 22px;
-  font-family: SourceSansPro-Light;
-  margin-top: 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
