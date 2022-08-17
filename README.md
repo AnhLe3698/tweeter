@@ -7,9 +7,16 @@ JQuery, Http, Express Servers, SASS, Client side rendering and server resource m
 
 ## Screenshots
 
+### Large Screen
 !["Large Screen"](./resources/images/largeScreen.png)
+
+### Large Screen Scrolled down
 !["Large Screen Scrolled down"](./resources/images/largeScreenScroll.png)
+
+### Small Screen - Single column layout
 !["Small Screen"](./resources/images/smallScreen.png)
+
+### Small Screen Scrolled Down
 !["Small Screen Scrolled Down"](./resources/images/smallScreenScroll.png)
 
 
