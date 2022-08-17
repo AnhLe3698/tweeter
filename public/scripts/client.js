@@ -125,6 +125,11 @@ $(window).scroll(function(event) {
   } else {
     $("#scrollUp").slideUp();
     $(".smFont").slideDown();
+    $("nav").show();
+  }
+
+  if ($(window).scrollTop()  >  400) {
+    $("nav").slideUp();
   }
 });
 
