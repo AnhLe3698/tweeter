@@ -1,3 +1,7 @@
+/* ------------------------
+-------Navigation Bar------
+---------------------------*/
+
 nav {
   display: flex;
   position: sticky;
@@ -34,7 +38,7 @@ nav {
 }
 
 #arrow {
-  animation: name-of-animation 1.5s infinite;
+  animation: name-of-animation 1s infinite;
 }
 
 #Title {

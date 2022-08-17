@@ -1,10 +1,13 @@
+/* -------------------------------------------------
+------Tweets formatting and Screen Resizing--------
+--------------------------------------------------- */
+
 #tweets-container {
   box-sizing: content-box;
   width: 100%;
 }
 
 .all-tweets {
-  /* box-sizing: content-box; */
   display: flex;
   flex-direction:column;
   position: relative;
@@ -47,7 +50,7 @@
   border-color: black;
   padding: 0px;
   margin-bottom: 0px;
-  white-space: pre-line; /*Allows for words to continue on next line*/
+  white-space: pre-line;
   max-width: 85%;
   font-family: 'SourceSansPro-SemiBold';
 }
@@ -79,15 +82,9 @@
 }
 
 
-
-/* svg {
-  pointer-events: none;
-} */
-
 #icons:hover {
   cursor: pointer;
   color: gold;
-  /* filter: invert(83%) sepia(43%) saturate(2244%) hue-rotate(359deg) brightness(103%) contrast(104%); */
 }
 
 #blackLine {
@@ -111,6 +108,7 @@ article + article {
   width: 23px;
 }
 
+/* --------------Stretch---------- */
 #scrollUp {
   position: fixed;
   display: flex;
@@ -129,10 +127,23 @@ article + article {
   background-color: red;
 }
 
-/* #scrollUp {
-  display: none;
-} */
+@keyframes scrollArrow {
+  from {
+    transform: translateY(0%);
+  }
 
+  to {
+    transform: translateY(-8px);
+  }
+}
+
+#scrollUp {
+  animation: scrollArrow 1s infinite;
+}
+/* ------Stretch End------ */
+
+
+/* -------- Dynamic Pages, screen resizing --------- */
 @media only screen and (min-width: 1024px) {
   nav {
     background-color: #4056A1;
@@ -148,6 +159,8 @@ article + article {
   }
   .prof {
     /* position: fixed; */
+    position: sticky;
+    top: 150px;
     width: 45vh;
     height: 38vh;
     margin-right: 15vh;

@@ -19,13 +19,10 @@
     <!-- External JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-    
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    
     <nav>
       <span id="Title">tweeter</span>
       <span class="smFont"><span class="Title2"><span><span class="bold">Write </span><span>a new tweet</span>
@@ -34,10 +31,9 @@
     
 
     <!-- Page-specific (main) content here -->
-    
-
     <main >
 
+      <!-- Profile picture and name -->
       <header class="prof">
         <div class="image1">
             <img src="/images/profile-hex.png"> 
@@ -48,9 +44,12 @@
         </div>
       </header>
       
+      <!-- The following are all formatted into a s single column -->
       <div id="mainContainer">
         <h1 id="errorMessage">⚠️--Alert! You have surpassed the character limit!--⚠️</h1>
         <h1 id="errorMessage2">⚠️---------Alert! Missing Tweet Information----------⚠️</h1>
+
+        <!-- New Tweet Form -->
         <section class="new-tweet">
           <form id="newText" method="POST" action="/tweets/">
             <div><label id="titleHum" for="tweet-text">What are you humming about?</label></div>
@@ -65,26 +64,11 @@
         </section>
   
         <div id="tweets-container">
-          <article class="all-tweets">
-            <h1 class="tweet-title"><span><img src="https://i.imgur.com/73hZDYK.png" alt="profile"> Newton
-            </span><span id="handle">@SirIsaac</span></h1>
-            <p class="tweet-body">
-              If I have seen further it is by standing on 
-              the shoulders of giants
-            </p>
-            <span id="blackLine"></span>
-            <footer class="tweet-footer">
-              <span>10 days ago</span> 
-              <span id="iconBox">
-                <object class="icons" data="./images/flag-solid.svg" width="16" height="16"> </object>
-                <object class="icons" data="./images/retweet-solid.svg" width="16" height="16"> </object> 
-                <object class="icons" data="./images/heart-solid.svg" width="16" height="16"></object>
-              </span>
-            </footer>
-          </article>
+          <!-- Tweets go here!! -->
         </div>
       </div>
       
+      <!-- Scroll up arrow -->
       <i id="scrollUp" class="fa-solid fa-angles-up"></i>
 
     </main>
