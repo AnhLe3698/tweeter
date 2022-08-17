@@ -1,6 +1,7 @@
 /* ------------------------
 -------Navigation Bar------
 ---------------------------*/
+
 nav {
   display: flex;
   position: sticky;
@@ -8,7 +9,7 @@ nav {
   left: 0;
   right: 0;
   z-index: 4; /* This will allow it to appear in forground */
-  font-family: "Bungee-Regular";
+  font-family: 'Bungee-Regular';
   background-color: orange;
   color: #FFFFFF;
   flex-direction: row;
@@ -30,10 +31,12 @@ nav {
   from {
     transform: translateY(0%);
   }
+
   to {
     transform: translateY(4px);
   }
 }
+
 #arrow {
   animation: name-of-animation 1s infinite;
 }

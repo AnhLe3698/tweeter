@@ -1,6 +1,7 @@
 /* ----------------------------
 --------New Tweet Form--------
 ------------------------------ */
+
 .new-tweet {
   margin-top: 15px;
   width: 90%;
@@ -9,13 +10,13 @@
 
 #titleHum {
   font-size: 18px;
-  font-family: "SourceSansPro-SemiBold";
+  font-family: 'SourceSansPro-SemiBold';
 }
 
 .bottomBar {
   display: flex;
   justify-content: space-between;
-  font-family: "Bungee-Regular";
+  font-family: 'Bungee-Regular';
 }
 
 #tweet-text {
@@ -28,7 +29,7 @@
   font-size: 14px;
   width: 100%;
   background: transparent;
-  font-family: "SourceSansPro-SemiBold", "sans-serif";
+  font-family: 'SourceSansPro-SemiBold', 'sans-serif';
 }
 
 .bottomBar button {

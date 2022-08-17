@@ -3,30 +3,35 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-@font-face {
+ @font-face {
   font-family: "Bungee-Regular";
   src: url("./fonts/Bungee-Regular.ttf");
 }
+
 @font-face {
   font-family: "SourceSansPro-Light";
   src: url("./fonts/SourceSansPro-Light.ttf");
 }
+
 @font-face {
   font-family: "SourceSansPro-LightItalic";
   src: url("./fonts/SourceSansPro-LightItalic.ttf");
 }
+
 @font-face {
   font-family: "SourceSansPro-SemiBold";
   src: url("./fonts/SourceSansPro-SemiBold.ttf");
 }
+
 @font-face {
   font-family: "SourceSansPro-SemiBoldItalic.";
   src: url("./fonts/SourceSansPro-SemiBoldItalic.ttf");
 }
+
 html {
   box-sizing: border-box;
+  
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -34,18 +39,20 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
   font-size: 24px;
   background-image: url("https://www.transparenttextures.com/patterns/always-grey.png");
-  font-family: "SourceSansPro-Light", "sans-serif";
+  font-family: 'SourceSansPro-Light', 'sans-serif';
 }
 
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-#mainContainer {
+
+ #mainContainer {
   margin-top: 0px;
   position: relative;
   display: flex;
@@ -54,4 +61,5 @@ body {
   align-content: center;
   flex-direction: column;
   border-spacing: 15px;
-}
+ }
+ 

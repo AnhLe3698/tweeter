@@ -1,6 +1,7 @@
 /* -------------------------------------------------
 ------Tweets formatting and Screen Resizing--------
 --------------------------------------------------- */
+
 #tweets-container {
   box-sizing: content-box;
   width: 100%;
@@ -8,7 +9,7 @@
 
 .all-tweets {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   position: relative;
   border: 2px solid black;
   min-width: 250px;
@@ -40,7 +41,7 @@
   opacity: 50%;
 }
 
-.tweet-body {
+.tweet-body{
   display: flex;
   align-self: center;
   font-size: 15px;
@@ -51,7 +52,7 @@
   margin-bottom: 0px;
   white-space: pre-line;
   max-width: 85%;
-  font-family: "SourceSansPro-SemiBold";
+  font-family: 'SourceSansPro-SemiBold';
 }
 
 .tweet-footer {
@@ -77,8 +78,9 @@
   position: relative;
   height: 30px;
   width: 20px;
-  z-index: 1;
+  z-index: +1;
 }
+
 
 #icons:hover {
   cursor: pointer;
@@ -129,15 +131,18 @@ article + article {
   from {
     transform: translateY(0%);
   }
+
   to {
     transform: translateY(-8px);
   }
 }
+
 #scrollUp {
   animation: scrollArrow 1s infinite;
 }
-
 /* ------Stretch End------ */
+
+
 /* -------- Dynamic Pages, screen resizing --------- */
 @media only screen and (min-width: 1024px) {
   nav {
