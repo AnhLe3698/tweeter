@@ -102,7 +102,7 @@ article + article {
 }
 
 .gap {
-  height: 100px;
+  height: 200px;
 }
 
 /*Profile picture size*/
@@ -110,6 +110,28 @@ article + article {
   height: 23px;
   width: 23px;
 }
+
+#scrollUp {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  width: 60px;
+  color: white;
+  height: 60px;
+  font-size: 25px;
+  bottom: 7px;
+  right: 7px;
+  border-radius: 30px;
+  background-color: red;
+}
+
+/* #scrollUp {
+  display: none;
+} */
 
 @media only screen and (min-width: 1024px) {
   nav {

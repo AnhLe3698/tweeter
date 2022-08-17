@@ -68,6 +68,7 @@ const createTweetElement = function(tweet) {
 };
 
 const loadTweets = function() {
+  $("#scrollUp").slideUp();
   $.getJSON('/tweets/', function(data) {
     renderTweets(data);
   });
@@ -104,10 +105,32 @@ $("#newText").submit(function(event) {
 
 
 $(".smFont").on('click', () => {
+  
   if ($(".new-tweet").is(":hidden")) {
+    setTimeout(() => {}, 50);
     $(".new-tweet").slideDown("slow");
-    $("html, body").animate({ scrollTop: 0 }, "slow");
   } else {
     $(".new-tweet").slideUp("slow");
   }
+});
+
+$(window).scroll(function(event) {
+
+  if($(window).scrollTop()  >  200) {
+    $(".new-tweet").slideUp("slow");
+    // $(".smFont").css({'justify-content':'center', 'align-content':'center',
+    // 'flex-direction':'column', 'align-self':'center', 'align-items':'center'});
+    $(".smFont").slideUp("slow");
+    $("#scrollUp").slideDown();
+  } else {
+    $("#scrollUp").slideUp();
+    $(".smFont").slideDown();
+  }
+});
+
+$("#scrollUp").on('click', ()=> {
+  $("html, body").animate({ scrollTop: 0 }, 1000, () => {
+    $(".smFont").slideDown();
+    $("#scrollUp").slideUp();
+  });
 });

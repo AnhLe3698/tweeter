@@ -6,7 +6,7 @@ nav {
   right: 0;
   z-index: 4; /* This will allow it to appear in forground */
   font-family: 'Bungee-Regular';
-  background-color: #4056A1;
+  background-color: orange;
   color: #FFFFFF;
   flex-direction: row;
   height: 120px;
@@ -14,6 +14,7 @@ nav {
   align-content: space-around;
   justify-content: space-between;
   font-size: 35px;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
 }
 
 #arrow {
