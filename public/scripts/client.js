@@ -82,6 +82,7 @@ $("#newText").submit(function(event) {
           renderTweets(data); // Renders the JSON object as tweets
         });
       });
+    $("#tweet-text").val("");
   }
 });
 
