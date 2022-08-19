@@ -82,7 +82,9 @@ $("#newText").submit(function(event) {
           renderTweets(data); // Renders the JSON object as tweets
         });
       });
+    // Resets the tweet form
     $("#tweet-text").val("");
+    $(".counter").val("140");
   }
 });
 
